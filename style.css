@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body 
+{
+    margin: 0;/*default margin ko hatane ke liye*/
+    font-family: Arial, Helvetica, sans-serif,serif;
+  }
+* 
+{
+  box-sizing: border-box;
+}/*used to include an element's padding and border in its total width and height
+when using position: relative or position: absolute, you should use box-sizing: content-box.
+This allows the positioning values to be relative to the content, and independent of changes to border and padding sizes. */
+
+  .topnav
+  {
+    overflow: hidden;/*agar ye nahi lagayenge to content( of navbar) overflow ho jayega, hidden se jo overflow wala content hota hai vo hide ho jata hai*/
+    background-color: #333;
+  }
+  
+  .topnav a
+  {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a#split
+  {
+    float: right;
+    color: white;
+  }
+  .topnav a:hover
+  {
+    background-color: #2ec209;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #2ec209;
+    color: white;
+  }
+  
+  #date{color: rgb(0, 255, 98);font-family:Verdana, Geneva, Tahoma, sans-serif;}
+  #stdlib{padding: 10px;float:left;}
+  .std
+  {
+    background-color: black;
+    color: bisque;
+    font-size: 20px;
+    font-family: serif;
+    padding:10px; 
+    border:3px solid black;
+    border-radius: 25px;
+  }
+  .std:hover
+  {
+    background-color: bisque;
+    color: black;
+  }
+  #dt
+  {
+    padding: 10px;
+    float:right;
+  }
+  .clear::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #boxhome1
+  {
+    float:left;   
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+    background-color: bisque;
+    font-size:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    border: 2px solid black;
+    p{padding: 15px;}
+    h4{margin:0px;border-bottom:2px solid black;padding: 10px;}
+  }
+  #boxhome2
+  {
+    background-image: url(lib1.avif);
+    float:right;   
+    margin-top:20px;
+    margin-right:15px;
+    margin-bottom:20px;
+    font-size:15px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 500px;
+    height: 600px;
+    border: 2px solid black;
+    p{padding: 15px;}
+    h4{margin:0px;border-bottom:2px solid black;padding: 10px;}
+    a{text-decoration: none;}
+  }
+  #boxhome3
+  {
+    margin-top: 20px;
+    margin-right: 20px;
+    float:right;
+    width: 350px;
+    height: 600px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url(std3.png);
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    text-aLIGN: center;
+    a{text-decoration: none;}
+  }
+  .boxh a:hover
+  {
+    color:rgb(0, 255, 8);
+  }
+  #boxhome4
+  {
+    float:inline-end;
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+    font-size:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    height: 266px;
+    margin-right: 14px;
+    border: 2px solid black;
+    background-image: url(book5.jpg);
+    a{text-decoration:none;color:bisque;font-size: 140px;font-size: 200px;text-align: center;}
+  }
+  .ani{
+    background-color: red;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    padding-top: 10px;
+    height:100px;
+    font-size: 60px;
+    border-bottom: 3px solid black;
+    margin-bottom: 50px;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:rgb(0, 94, 255); left:200px; top:200px;}
+    75%  {background-color:rgb(6, 236, 6); left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  #back
+{
+    border: 1px solid bisque;
+    border-radius: 70px;
+    text-decoration: none;
+    padding: 20px;
+    margin:30px;
+    width: 200px;
+    font-family: cursive;
+    a{color:bisque;text-decoration: none;}
+
+}
+#back:hover
+{
+    background-color: bisque;
+    opacity: 100%;
+    a{color: black;}
+}
+/*When using position: relative or position: absolute, you should use box-sizing: content-box.
+This allows the positioning values to be relative to the content, and independent of changes to border and padding sizes. */\

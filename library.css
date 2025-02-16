@@ -1,0 +1,60 @@
+.box
+{
+    border:1px solid black;
+    height: 2000px;
+}
+#box
+{
+    border:2px solid rgb(240, 244, 180);
+    margin-top:100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height:705px;
+    a{text-decoration: none;}
+}
+#abc
+{   font-size: 20px;
+    padding:10px;
+    margin:20px;
+    float:left;
+    width: 300px;
+    background-color:rgb(240, 244, 180);
+}
+#book
+{   font-size: 20px;
+    padding:10px;
+    float:right;
+    margin:20px;
+    width: 200px;
+    background-color:rgb(240, 244, 180);
+}
+#r1
+{
+    float:left;
+    height: 700px;
+    width: 10%;
+    h3{margin:10px;}
+   
+}
+
+#if
+{
+    float:right;
+    height: 700px;
+    width: 90%;
+    background-color: lightgrey;
+}
+td
+    {
+        background-color: rgb(240, 244, 180);
+        padding:10px;
+        width: 200px;
+        height: 56.5px;
+    }
+a{text-decoration: none;
+        color: rgb(66, 0, 25);}
+td:hover
+{
+    background-color: rgb(220, 255, 47);
+    color: black;
+}

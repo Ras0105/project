@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxi
+{
+    border: 2px solid bisque;
+    margin: 20px;
+    height: 700px;
+}
+#clear::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+#b1
+{
+    float:left;
+    
+    height: 700px;
+    width: 10%;
+}
+
+#b2
+{
+    float:right;
+    height: 700px;
+    width: 90%;
+    
+
+}
+td
+    {
+        background-color: rgb(56, 53, 53);
+        padding:10px;
+        width: 150px;
+        height: 56.5px;
+    }
+    a{text-decoration: none;
+        color: bisque;}
+.boxi td:hover
+{
+    a{color: black;}
+    background-color: bisque;
+    width: 150px;
+    height: 56.5px;
+}
