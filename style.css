@@ -108,9 +108,10 @@ This allows the positioning values to be relative to the content, and independen
   {
     margin-top: 20px;
     margin-right: 20px;
+     margin-left:20px;
     float:right;
     width: 350px;
-    height: 650px;
+    height: 600px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-image:url(std3.png);
     background-repeat: no-repeat;
