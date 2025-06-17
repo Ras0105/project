@@ -87,14 +87,7 @@ This allows the positioning values to be relative to the content, and independen
     p{padding: 15px;}
     h4{margin:0px;border-bottom:2px solid black;padding: 10px;}
   }
-#boxhome2 p {
-  padding: 15px;
-}
-#boxhome2 h4 {
-  margin: 0;
-  padding: 10px;
-  border-bottom: 2px solid black;
-}
+
   #boxhome2
   {
     background-image: url(lib1.avif);
@@ -189,9 +182,8 @@ This allows the positioning values to be relative to the content, and independen
 /*When using position: relative or position: absolute, you should use box-sizing: content-box.
 This allows the positioning values to be relative to the content, and independent of changes to border and padding sizes. */\
 /* === RESPONSIVE STYLING FOR MOBILE SCREENS === */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
-  /* NAVBAR */
   .topnav a {
     float: none;
     display: block;
@@ -202,7 +194,7 @@ This allows the positioning values to be relative to the content, and independen
     float: none;
   }
 
-  /* HOMEPAGE BOXES */
+
   #boxhome1,
   #boxhome2,
   #boxhome3,
@@ -210,24 +202,19 @@ This allows the positioning values to be relative to the content, and independen
     float: none;
     width: 90%;
     margin: 10px auto;
-    height: auto; /* Let content define height */
-  }
-
-  /* DATE & STANDARD LIBRARY ALIGNMENT */
-  #stdlib, #dt {
+    height: auto;
+}
     float: none;
     text-align: center;
     padding: 10px 0;
   }
 
-  /* Make animated heading responsive */
   .ani {
     font-size: 30px;
     height: auto;
     padding: 20px;
   }
 
-  /* Back Button Centered */
   #back {
     width: auto;
     text-align: center;
@@ -235,8 +222,7 @@ This allows the positioning values to be relative to the content, and independen
     display: block;
   }
 
-  /* Optional: Set overall body padding for mobile */
   body {
     padding: 10px;
   }
-}
+} */
