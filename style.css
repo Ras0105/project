@@ -150,13 +150,7 @@ This allows the positioning values to be relative to the content, and independen
     border-bottom: 3px solid black;
     margin-bottom: 50px;
   }
-<!-- Add this inside your header -->
-<button class="nav-toggle" aria-label="Open menu">☰</button>
-<nav class="navbar">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <!-- ... -->
-</nav>
+
 
   
   @keyframes example {
@@ -186,3 +180,55 @@ This allows the positioning values to be relative to the content, and independen
 }
 /*When using position: relative or position: absolute, you should use box-sizing: content-box.
 This allows the positioning values to be relative to the content, and independent of changes to border and padding sizes. */\
+/* === RESPONSIVE STYLING FOR MOBILE SCREENS === */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a#split {
+    float: none;
+  }
+
+  /* HOMEPAGE BOXES */
+  #boxhome1,
+  #boxhome2,
+  #boxhome3,
+  #boxhome4 {
+    float: none;
+    width: 90%;
+    margin: 10px auto;
+    height: auto; /* Let content define height */
+  }
+
+  /* DATE & STANDARD LIBRARY ALIGNMENT */
+  #stdlib, #dt {
+    float: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Make animated heading responsive */
+  .ani {
+    font-size: 30px;
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Back Button Centered */
+  #back {
+    width: auto;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* Optional: Set overall body padding for mobile */
+  body {
+    padding: 10px;
+  }
+}
