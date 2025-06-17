@@ -150,6 +150,14 @@ This allows the positioning values to be relative to the content, and independen
     border-bottom: 3px solid black;
     margin-bottom: 50px;
   }
+<!-- Add this inside your header -->
+<button class="nav-toggle" aria-label="Open menu">☰</button>
+<nav class="navbar">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <!-- ... -->
+</nav>
+
   
   @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
