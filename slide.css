@@ -3,79 +3,97 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container
-{
-  border:3px solid bisque;
-  height:1000px;
-  margin:40px;
-  
-  
+
+/* Container cleanup: remove fixed height to avoid empty space */
+.container {
+  border: 3px solid bisque;
+  border-radius: 10px;
+  margin: 40px;
+  padding: 10px;
+  background: transparent;
 }
 
+/* Slideshow */
 .slideshow-container {
-    position: relative;
-    background: #000000f1;
-    
-    margin:10px;
-  }
-  
-
-  .mySlides {
-    display: none;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 80px;
-    text-align: center;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #141212;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color:bisque;
-  }
-  
-  .dot-container {
-      text-align: center;
-      background: #000000;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #121212;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  q {font-style: italic;
-    color:bisque ;
+  position: relative;
+  background: linear-gradient(180deg, #000000, #0d0d0d);
+  border-radius: 12px;
+  margin: 10px;
+  overflow: hidden;
 }
 
-  .author {color: cornflowerblue;}
+.mySlides {
+  display: none;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.mySlides q {
+  font-style: italic;
+  color: bisque;
+  font-size: clamp(18px, 2.2vw, 28px);
+  line-height: 1.6;
+  display: inline-block;
+  max-width: 900px;
+}
+
+.author {
+  color: cornflowerblue;
+  margin-top: 18px;
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+/* Prev / Next */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 14px 16px;
+  color: #e5e5e5;
+  font-weight: 700;
+  font-size: 22px;
+  user-select: none;
+  border-radius: 8px;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(2px);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.12);
+  color: bisque;
+}
+
+/* Dots */
+.dot-container {
+  text-align: center;
+  background: #000000;
+  padding: 12px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #1f1f1f;
+  border: 1px solid #3a3a3a;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+  transform: scale(1.05);
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .container { margin: 16px; padding: 8px; }
+  .mySlides { padding: 40px 18px; }
+  .prev, .next { font-size: 18px; padding: 10px 12px; }
+}

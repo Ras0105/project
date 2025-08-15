@@ -3,226 +3,201 @@
   padding: 0;
   box-sizing: border-box;
 }
-body 
-{
-    margin: 0;/*default margin ko hatane ke liye*/
-    font-family: Arial, Helvetica, sans-serif,serif;
-  }
-* 
-{
-  box-sizing: border-box;
-}/*used to include an element's padding and border in its total width and height
-when using position: relative or position: absolute, you should use box-sizing: content-box.
-This allows the positioning values to be relative to the content, and independent of changes to border and padding sizes. */
 
-  .topnav
-  {
-    overflow: hidden;/*agar ye nahi lagayenge to content( of navbar) overflow ho jayega, hidden se jo overflow wala content hota hai vo hide ho jata hai*/
-    background-color: #333;
-  }
-  
-  .topnav a
-  {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav a#split
-  {
-    float: right;
-    color: white;
-  }
-  .topnav a:hover
-  {
-    background-color: #2ec209;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #2ec209;
-    color: white;
-  }
-  
-  #date{color: rgb(0, 255, 98);font-family:Verdana, Geneva, Tahoma, sans-serif;}
-  #stdlib{padding: 10px;float:left;}
-  .std
-  {
-    background-color: black;
-    color: bisque;
-    font-size: 20px;
-    font-family: serif;
-    padding:10px; 
-    border:3px solid black;
-    border-radius: 25px;
-  }
-  .std:hover
-  {
-    background-color: bisque;
-    color: black;
-  }
-  #dt
-  {
-    padding: 10px;
-    float:right;
-  }
-  .clear::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  #boxhome1
-  {
-    float:left;   
-    margin-top:20px;
-    margin-left:20px;
-    margin-bottom:20px;
-    background-color: bisque;
-    font-size:15px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 600px;
-    border: 2px solid black;
-    p{padding: 15px;}
-    h4{margin:0px;border-bottom:2px solid black;padding: 10px;}
-  }
-
-  #boxhome2
-  {
-    background-image: url(lib1.avif);
-    float:right;   
-    margin-top:20px;
-    margin-right:15px;
-    margin-bottom:20px;
-    font-size:15px;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 500px;
-    height: 600px;
-    border: 2px solid black;
-    p{padding: 15px;}
-    h4{margin:0px;border-bottom:2px solid black;padding: 10px;}
-    a{text-decoration: none;}
-  }
-  #boxhome3
-  {
-    margin-top: 20px;
-    margin-right: 20px;
-     margin-left:20px;
-    float:right;
-    width: 350px;
-    height: 600px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-image:url(std3.png);
-    background-repeat: no-repeat;
-    border: 2px solid black;
-    text-aLIGN: center;
-    a{text-decoration: none;}
-  }
-  .boxh a:hover
-  {
-    color:rgb(0, 255, 8);
-  }
-  #boxhome4
-  {
-    float:inline-end;
-    margin-top:20px;
-    margin-left:20px;
-    margin-bottom:20px;
-    font-size:15px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 600px;
-    height: 266px;
-    margin-right: 14px;
-    border: 2px solid black;
-    background-image: url(book5.jpg);
-    a{text-decoration:none;color:bisque;font-size: 140px;font-size: 200px;text-align: center;}
-  }
-  .ani{
-    background-color: red;
-    animation-name: example;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    text-align: center;
-    padding-top: 10px;
-    height:100px;
-    font-size: 60px;
-    border-bottom: 3px solid black;
-    margin-bottom: 50px;
-  }
-
-
-  
-  @keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:rgb(0, 94, 255); left:200px; top:200px;}
-    75%  {background-color:rgb(6, 236, 6); left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-  }
-  #back
-{
-    border: 1px solid bisque;
-    border-radius: 70px;
-    text-decoration: none;
-    padding: 20px;
-    margin:30px;
-    width: 200px;
-    font-family: cursive;
-    a{color:bisque;text-decoration: none;}
-
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  padding-bottom: 40px;
 }
-#back:hover
-{
-    background-color: bisque;
-    opacity: 100%;
-    a{color: black;}
+
+/* Navbar */
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
-/*When using position: relative or position: absolute, you should use box-sizing: content-box.
-This allows the positioning values to be relative to the content, and independent of changes to border and padding sizes. */\
-/* === RESPONSIVE STYLING FOR MOBILE SCREENS === */
-/* @media (max-width: 768px) {
 
-  .topnav a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.topnav a {
+  color: #f2f2f2;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
-  .topnav a#split {
-    float: none;
-  }
+.topnav a#split {
+  margin-left: auto;
+}
 
+.topnav a:hover {
+  background-color: #2ec209;
+  color: #000;
+}
 
-  #boxhome1,
-  #boxhome2,
-  #boxhome3,
-  #boxhome4 {
-    float: none;
+.topnav a.active {
+  background-color: #2ec209;
+  color: white;
+}
+
+/* Animated Heading */
+.ani {
+  animation: example 10s infinite;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+@keyframes example {
+  0%   { background-color: #ff4d4d; }
+  25%  { background-color: #ffa64d; }
+  50%  { background-color: #4d79ff; }
+  75%  { background-color: #4dff88; }
+  100% { background-color: #ff4d4d; }
+}
+
+/* Cards / Boxes */
+.boxh {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxh:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+#boxhome1 {
+  background-color: #fff8f0;
+  font-size: 15px;
+  max-width: 800px;
+}
+
+#boxhome1 p {
+  padding: 20px;
+  line-height: 1.7;
+}
+
+#boxhome1 h4 {
+  padding: 15px 20px;
+  background-color: #f3d9b1;
+  font-weight: bold;
+}
+
+/* Library */
+#boxhome2 {
+  background-image: url(lib1.avif);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  max-width: 500px;
+  height: 600px;
+}
+
+#boxhome2 a {
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(255,255,255,0.9);
+  padding: 12px 18px;
+  border-radius: 8px;
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#boxhome2 a:hover {
+  background: #2ec209;
+  color: white;
+}
+
+/* Study Room */
+#boxhome3 {
+  background-image: url(std3.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  max-width: 350px;
+  height: 600px;
+}
+
+#boxhome3 a {
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(255,255,255,0.9);
+  padding: 12px 18px;
+  border-radius: 8px;
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#boxhome3 a:hover {
+  background: #2ec209;
+  color: white;
+}
+
+/* Books */
+#boxhome4 {
+  background-image: url(book5.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  max-width: 600px;
+  height: 266px;
+  margin: 20px auto;
+}
+
+#boxhome4 a {
+  text-decoration: none;
+  color: bisque;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 266px;
+  transition: color 0.3s ease;
+}
+
+#boxhome4 a:hover {
+  color: #2ec209;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .boxh, #boxhome4 {
     width: 90%;
-    margin: 10px auto;
-    height: auto;
+  }
 }
-    float: none;
-    text-align: center;
-    padding: 10px 0;
-  }
 
+@media (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+  }
   .ani {
-    font-size: 30px;
-    height: auto;
-    padding: 20px;
+    font-size: 2rem;
+    padding: 15px;
   }
-
-  #back {
-    width: auto;
-    text-align: center;
-    margin: 20px auto;
-    display: block;
+  #boxhome2, #boxhome3 {
+    height: 300px;
+    max-width: 100%;
   }
-
-  body {
-    padding: 10px;
+  #boxhome4 {
+    height: 200px;
+    max-width: 100%;
   }
-} */
+  #boxhome4 a {
+    line-height: 200px;
+    font-size: 2rem;
+  }
+}
