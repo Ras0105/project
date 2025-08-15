@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  padding-bottom: 40px;
+}
+
+/* Navbar */
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.topnav a {
+  color: #f2f2f2;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.topnav a#split {
+  margin-left: auto;
+}
+
+.topnav a:hover {
+  background-color: #2ec209;
+  color: #000;
+}
+
+.topnav a.active {
+  background-color: #2ec209;
+  color: white;
+}
+
+/* Animated Heading */
+.ani {
+  animation: example 10s infinite;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+@keyframes example {
+  0%   { background-color: #ff4d4d; }
+  25%  { background-color: #ffa64d; }
+  50%  { background-color: #4d79ff; }
+  75%  { background-color: #4dff88; }
+  100% { background-color: #ff4d4d; }
+}
+
+/* Cards / Boxes */
+.boxh {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxh:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+#boxhome1 {
+  background-color: #fff8f0;
+  font-size: 15px;
+  max-width: 800px;
+}
+
+#boxhome1 p {
+  padding: 20px;
+  line-height: 1.7;
+}
+
+#boxhome1 h4 {
+  padding: 15px 20px;
+  background-color: #f3d9b1;
+  font-weight: bold;
+}
+
+/* Library */
+#boxhome2 {
+  background-image: url(lib1.avif);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  max-width: 500px;
+  height: 600px;
+}
+
+#boxhome2 a {
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(255,255,255,0.9);
+  padding: 12px 18px;
+  border-radius: 8px;
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#boxhome2 a:hover {
+  background: #2ec209;
+  color: white;
+}
+
+/* Study Room */
+#boxhome3 {
+  background-image: url(std3.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  max-width: 350px;
+  height: 600px;
+}
+
+#boxhome3 a {
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(255,255,255,0.9);
+  padding: 12px 18px;
+  border-radius: 8px;
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#boxhome3 a:hover {
+  background: #2ec209;
+  color: white;
+}
+
+/* Books */
+#boxhome4 {
+  background-image: url(book5.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  max-width: 600px;
+  height: 266px;
+  margin: 20px auto;
+}
+
+#boxhome4 a {
+  text-decoration: none;
+  color: bisque;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 266px;
+  transition: color 0.3s ease;
+}
+
+#boxhome4 a:hover {
+  color: #2ec209;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .boxh, #boxhome4 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+  }
+  .ani {
+    font-size: 2rem;
+    padding: 15px;
+  }
+  #boxhome2, #boxhome3 {
+    height: 300px;
+    max-width: 100%;
+  }
+  #boxhome4 {
+    height: 200px;
+    max-width: 100%;
+  }
+  #boxhome4 a {
+    line-height: 200px;
+    font-size: 2rem;
+  }
+}

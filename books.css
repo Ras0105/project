@@ -1,0 +1,30 @@
+a,li{text-decoration: none;;}
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td
+{
+    height: 70px;
+    width: 1500px;
+    background-color: bisque;
+    opacity: 60%;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    a{text-decoration: none;color:black}
+}
+td:hover
+{
+    background-color: black;
+    border: 2px solid bisque;
+    opacity: 100%;
+    a{color:bisque;}
+}
+table
+{
+    padding: 50px;
+    width: 1500px;
+}
