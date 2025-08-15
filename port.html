@@ -5,22 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rasshi Ashish Srivastav — Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f9f9f9;color:#222;}
-    nav {background:#6C63FF;padding:10px 0;}
-    nav ul {list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:20px;}
-    nav a {color:white;text-decoration:none;font-weight:500;}
-    nav a:hover {text-decoration:underline;}
-    .container {max-width:900px;margin:auto;padding:20px;}
-    header {text-align:center;padding:20px 0;}
-    header img {width:150px;height:150px;border-radius:50%;object-fit:cover;}
-    h1 {margin:10px 0 5px;color:#6C63FF;}
-    p.subtitle {color:#555;}
-    section {background:#fff;margin-top:20px;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.05);}
-    h2 {color:#6C63FF;margin-bottom:10px;}
-    ul {padding-left:20px;}
-    a {color:#6C63FF;text-decoration:none;}
-  </style>
+  <link rel="stylesheet" href="port.css">
 </head>
 <body>
   <nav>
@@ -43,33 +28,41 @@
 
     <section id="about">
       <h2>About Me</h2>
-      <p>Motivated and detail-oriented Information Technology undergraduate with a strong interest in coding, development, and problem solving. Interested in learning, adapting, and contributing effectively to challenging and collaborative environments.</p>
+      <p>I am a motivated and detail-oriented Information Technology undergraduate with a strong interest in coding, development, and problem solving. I am eager to learn, adapt, and contribute effectively to challenging and collaborative environments.</p>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
-      <p><strong>Technical:</strong> HTML, CSS, JavaScript, C, C++, Git/GitHub, Canva</p>
-      <p><strong>Soft Skills:</strong> Teamwork, Problem-Solving, Time Management, Adaptability, Pressure Handling</p>
-      <p><strong>Interests:</strong> Cybersecurity, AI/ML</p>
+      <div class="card-grid">
+        <div class="card"><strong>Technical Skills:</strong> Tailwind CSS, JavaScript, C, C++, Git/GitHub</div>
+        <div class="card"><strong>Tools:</strong> Canva, Adobe Express</div>
+        <div class="card"><strong>Soft Skills:</strong> Teamwork, Team Manangement, Problem-Solving, Time Management, Adaptability, Pressure Handling</div>
+        <div class="card"><strong>Interests:</strong> Cybersecurity, AI/ML</div>
+      </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>My Personal Study Space</strong> — HTML, CSS (<a href="https://github.com/Ras0105/project" target="_blank">Code</a>)</li>
-        <li><strong>HackBlitz’25 EdTech Platform</strong> — HTML, CSS, JS (<a href="https://github.com/Ras0105/hackblitz" target="_blank">Code</a>)</li>
-        <li><strong>Netflix Clone</strong> — HTML, CSS, JS (<a href="https://ras0105.github.io/Netflix-Clone/netflix.html" target="_blank">Live</a>)</li>
-        <li><strong>ByteBurst’25 Mess Management Tool</strong> — Web-based (<a href="https://github.com/Ras0105/ByteBurst-25" target="_blank">Code</a>)</li>
-      </ul>
+      <div class="card-grid">
+        <div class="card"><strong>My Personal Study Space</strong> — Personalized learning dashboard for students (HTML, CSS) — <a href="https://github.com/Ras0105/project" target="_blank">Code</a> | <a href="https://ras0105.github.io/project/project.html" target="_blank">Live</a></div>
+        <div class="card"><strong>HackBlitz'25 EdTech Platform</strong> — Interactive online learning platform (HTML, CSS, JS) — <a href="https://github.com/Ras0105/hackblitz" target="_blank">Code</a> | <a href="https://ras0105.github.io/hackblitz/home.html" target="_blank">Live</a></div>
+        <div class="card"><strong>Netflix Clone</strong> — Streaming service UI clone (HTML, CSS, JS) — <a href="https://github.com/Ras0105/Netflix-Clone" target="_blank">Code</a> | <a href="https://ras0105.github.io/Netflix-Clone/netflix.html" target="_blank">Live</a></div>
+        <div class="card"><strong>ByteBurst'25 Mess Management Tool</strong> — Mess Management Tool — <a href="https://github.com/Ras0105/ByteBurst-25" target="_blank">Code</a> | <a href="https://ras0105.github.io/ByteBurst-25/mess.html" target="_blank">Live</a></div>
+        <div class="card"><strong>Faulty Calculator</strong> — 50% faulty calculator — <a href="https://github.com/Ras0105/FaultyCal" target="_blank">Code</a> | <a href="https://ras0105.github.io/FaultyCal/FaultyCal.html" target="_blank">Live</a></div>
+      </div>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
       <ul>
-        <li>Executive Member — Drone & IoT Club (Feb 2025 - Present)</li>
-        <li>Worked on club website and IoT projects</li>
-        <li>Designed orientation presentation for 200+ freshers</li>
-        <li>Coordinated 100+ students during orientation events</li>
+        <li><strong>Executive Member</strong> — Drone & IoT Club, MMMUT Gorakhpur (Feb 2025 - Present)<br>
+        • Working on club website and IoT projects<br>
+        • Designed and delivered orientation presentation for 200+ freshers<br>
+        • Coordinated and guided 100+ students during events</li>
+        <li><strong>Member</strong> — Cultural Synod, Fine Arts Club (Feb 2025 - Present)<br>
+        • Worked in ABHYUDAYA'S team</li>
+        <li><strong>Volunteer</strong> — GDG's Orientation (Aug 2025)<br>
+        • Coordinated and guided 100+ new students during orientation</li>
       </ul>
     </section>
 
@@ -78,16 +71,43 @@
       <ul>
         <li><strong>B.Tech. IT</strong>, MMMUT, Gorakhpur (2024-2028)</li>
         <li><strong>Intermediate</strong>, Aatmdeep Vidyalaya, Gorakhpur (2023)</li>
-        <li><strong>High School</strong>, St. Mary’s Convent Carmel School, Gorakhpur (2020)</li>
+        <li><strong>High School</strong>, St. Mary's Convent Carmel School, Gorakhpur (2020)</li>
       </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:smt29nov@gmail.com">smt29nov@gmail.com</a></p>
-      <p>Phone: +91-7275445980</p>
+      <p>Phone: <a href="tel:+917275445980">+91-7275445980</a></p>
+      <p>Portfolio: <a href="https://ras0105.github.io/Portfolio/port.html" target="_blank">ras0105.github.io/Portfolio</a></p>
       <p>GitHub: <a href="https://github.com/Ras0105" target="_blank">github.com/Ras0105</a></p>
     </section>
   </div>
+<script>
+  
+  const sections = document.querySelectorAll('section');//select all the sections, nodelist/array elements ki tarah list deta hais ections ki
+
+  function revealOnScroll() {
+    const trigger = window.innerHeight * 0.85;//85% of vh deta hai
+//when a section’s top crosses above this line, it will be revealed.
+    sections.forEach(section => {//sections ke andar ke saare elements ko visit karta hai
+      if (section.getBoundingClientRect().top < trigger) {
+        section.classList.add('visible');
+      }
+      //section.getBoundingClientRect().top is the Distance from the top of the viewport to the top of the section.
+      //If this value is less than the trigger line, it means the section has moved far enough into view to be revealed.
+    });
+  }
+
+  /*top se 85% of vh ek line hai, agar use cross karega to visible hoga,
+  i.e. agar section ke top ki height top se 85% wali height se choti hai tab
+  that means usne cross kar liya hai to use iss condition ko check karke visible bana denge*/
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // run once on load
+</script>
+
 </body>
 </html>
+
+<!--getBoundingClientRect() JavaScript ka built-in DOM method hai jo tumhe kisi element ka size aur uski position deta hai viewport ke respect me.-->
